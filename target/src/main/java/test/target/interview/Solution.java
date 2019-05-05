@@ -4,9 +4,10 @@ import java.util.*;
 
 public class Solution {
     final static int xMax = 400;
+    final static int yMax = 600;
     public static void main(String [] args){
 
-        int array[][] = new int[xMax][600];
+        int array[][] = new int[xMax][yMax];
         Scanner s = new Scanner(System.in);
         System.out.println(" Please enter number of barren island ");
         int n= s.nextInt();
@@ -31,9 +32,9 @@ public class Solution {
         int count = 1;
         List<Integer> farmingAreaList = new ArrayList<>();
         for (int j = 0; j < xMax ; j++) {
-            for (int k = 0; k < 600; k++) {
+            for (int k = 0; k < yMax; k++) {
                 if(array[j][k] == 0){
-                    farmingAreaList.add(fillwithCount(array , j, k ,count , xMax, 600 ));
+                    farmingAreaList.add(fillwithCount(array , j, k ,count , xMax, yMax ));
                     count++;
                 }
             }
@@ -57,7 +58,7 @@ public class Solution {
 
     private static void showContentsOfArray(int[][] array) {
         for (int j = 0; j < xMax; j++) {
-            for (int k = 0; k < 600; k++) {
+            for (int k = 0; k < yMax; k++) {
                 System.out.print(array[j][k]+" ");
             }
             System.out.println();

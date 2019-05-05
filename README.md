@@ -5,10 +5,11 @@ and then enter the number of barren square spaces , and enter barren square spac
 the square spaces this program will list the available farming areas in ascending order 
 
 example
-
->java -jar interview.jar
+```
+java -jar interview.jar
  Please enter number of barren island
 1
 0 292 399 307
 116800
 116800
+```
